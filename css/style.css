@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+  
+h1 {
+    font-size: 88px;
+}
+  
+h3 {
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 40px;
+}
+  
+h6 {
+   font-size: 32px; 
+}
+
+.flex-container {
+    display: flex;
+}
+
+.App {
+    text-align: left;
+    background-color: #000;
+    color: white;
+    /* smartsignskärmarnas upplösning */
+
+    width: 1181px;
+}
+  
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+  
+.App-header {
+    background-color: #000;
+    color: white;
+}
+  
+.App-title {
+    font-size: 1.5em;
+}
+  
+.App-intro {
+    font-size: large;
+}
+  
+.App-content {
+    background-color: #000;
+    color: #fff;
+}
+  
+.Smartsign-header-image {
+    width: 100%;
+}
+  
+.Smartsign-header-1 {
+    padding-top: 90px;
+    padding-left: 15px;
+}
+  
+.Smartsign-header-2 {
+    padding-top: 30px;
+    padding-left: 15px;
+}
+  
+.Smartsign-header-3 {
+    padding-top: 50px;
+    padding-left: 15px;
+}
+  
+#grouproomentries {
+    height: 20%;
+}
+
+.Smartsign-content-1 {
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 32px;
+    column-count: 2;
+    column-gap: 0;
+    width: 800px;
+    height: 100%;
+}
+  
+.Smartsign-item {
+    width: 320px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.grey {
+    background-color: grey
+}
+
+.red {
+    background-color: rgb(226, 70, 70);
+}
+
+.orange {
+    background-color: rgb(223, 165, 57);
+}
+
+.yellow {
+    background-color: rgb(236, 236, 56);
+}
+  
+.green {
+    background-color: rgb(54, 165, 54);
+}
+
+.redsquare {
+	width: 40px;
+	height: 40px;
+	background: rgb(226, 70, 70);
+}
+
+.greensquare {
+	width: 40px;
+	height: 40px;
+	background: rgb(54, 165, 54);
+}
+
+.chartcontainer {
+    width: 380px;
+    height: 380px;
+}
+
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
