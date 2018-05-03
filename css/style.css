@@ -29,7 +29,7 @@ h6 {
     background-color: #000;
     color: white;
     /* smartsignskärmarnas upplösning */
-
+    height: 2100px;
     width: 1181px;
 }
   
@@ -41,6 +41,7 @@ h6 {
 .App-header {
     background-color: #000;
     color: white;
+    padding-left: 15px;
 }
   
 .App-title {
@@ -62,12 +63,10 @@ h6 {
   
 .Smartsign-header-1 {
     padding-top: 90px;
-    padding-left: 15px;
 }
   
 .Smartsign-header-2 {
     padding-top: 30px;
-    padding-left: 15px;
 }
   
 .Smartsign-header-3 {

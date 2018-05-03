@@ -26,7 +26,7 @@ $(document).ready(function() {
         var date = new Date();
         date.setDate(date.getDate() - 1);
         var endTime = date.getFullYear() + "-" + (addZero(date.getMonth()+1)) + "-" + date.getDate() + "+23:59:59";
-        date.setDate(date.getDate() - 7);
+        date.setDate(date.getDate() - 5);
         var startTime = date.getFullYear() + "-" + (addZero(date.getMonth()+1)) + "-" + date.getDate() + "+00:00:00";    
         
         console.log(startTime);
