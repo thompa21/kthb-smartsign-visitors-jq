@@ -1,5 +1,5 @@
-# kthb-smartsign-jq
+# kthb-smartsign-visitors-jq
 
-Visar bokningsstatus för grupprum och lässtudio på KTH Biblioteket(campus valhallavägen).
+Visar besökstatistik på KTH Biblioteket(campus valhallavägen).
 
 Implementeras på Smartsign-skärmarna i entrén.
