@@ -32,7 +32,7 @@ $(document).ready(function() {
         console.log(startTime);
         console.log(endTime);
         //uppdatera html
-        $("#header3").html('<h3>Besöksstatistik / Visitor statistics</h3><div><h6>Antal besökare som befinner sig i biblioteket under aktuell timme</h6></div>');
+        $("#header3").html('<h3>Besöksstatistik / Visitor statistics</h3><div><h4>Antal besökare som befinner sig i biblioteket under aktuell timme</h4></div>');
         var currenttimestamp = Math.floor(Date.now() /1000);
         //currenttimestamp = 1521299582;
         var html = '';
