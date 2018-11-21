@@ -19,7 +19,7 @@ $(document).ready(function() {
     
     /**
      * 
-     * Funktion som anropar MRBS Api
+     * Funktion som anropar Viametrics Api
      * 
      */
     function getVisitors(){
@@ -32,7 +32,7 @@ $(document).ready(function() {
         console.log(startTime);
         console.log(endTime);
         //uppdatera html
-        $("#header3").html('<h3>Besöksstatistik / Visitor statistics</h3><div><h4>Antal besökare som befinner sig i biblioteket under aktuell timme</h4></div>');
+        $("#header3").html('<h3>Besöksstatistik / Visitor statistics</h3><div><h4>Antal besökare som befunnit sig i biblioteket under aktuell timme</h4></div>');
         var currenttimestamp = Math.floor(Date.now() /1000);
         //currenttimestamp = 1521299582;
         var html = '';
@@ -65,8 +65,8 @@ $(document).ready(function() {
  * @param {*} label 
  * 
  */
-function createchart(hour, nrofvisitors, chartname, label){
-    $("#charts").append('<div class="chartcontainer"><canvas style="" id="' + chartname + '" width="400" height="400"></canvas><div>')
+function createchart(hour, nrofvisitors, chartname, label, dayin, dayout){
+    $("#charts").append('<div class="chartcontainer"><canvas style="" id="' + chartname + '" width="400" height="400"></canvas><div style="padding-left: 10px; color: rgba(200, 200, 200, .75);font-size: 12px"> In: ' +  dayin + ' Ut:' +  dayout + '</div><div>')
     var chartdata = {
         labels: hour,
         datasets : [
@@ -120,7 +120,7 @@ $(document).ajaxSuccess(function (event, jqxhr, settings) {
             //om nytt datum skriv ut diagram
             if( element.datetime.substring(0,10).indexOf(lastdate)===-1){
                 //skapa diagram
-                createchart(hour, nrofvisitors, "myChart" + nrofcharts, "Besökare: " + lastdate ) 
+                createchart(hour, nrofvisitors, "myChart" + nrofcharts, "Besökare: " + lastdate, dayin, dayout) 
                 //reset variabler
                 dayin = 0;
                 dayout = 0;
@@ -146,7 +146,7 @@ $(document).ajaxSuccess(function (event, jqxhr, settings) {
 
         //skapa diagram 
         if(onlyoneday){
-            createchart(hour, nrofvisitors, "myChart" + nrofcharts, "Besökare: " + lastdate)
+            createchart(hour, nrofvisitors, "myChart" + nrofcharts, "Besökare: " + lastdate, dayin, dayout)
         }
     }
 });

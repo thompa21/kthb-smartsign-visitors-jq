@@ -131,6 +131,7 @@ h6 {
 .chartcontainer {
     width: 380px;
     height: 380px;
+    margin-bottom: 30px;
 }
 
 @keyframes App-logo-spin {
